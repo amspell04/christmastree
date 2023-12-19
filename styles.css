@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(159, 170, 222);
+    border: double 8px rgb(229, 222, 91);
+}
+
+
+
+#tree{
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    padding-top: 0;
+    opacity: 0;
+    justify-content: center;
+    animation: appear 5s, spin 5s;
+    animation-delay: 0s, 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+#merry{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -800px;
+    animation: 10s to-right;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes appear{
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes spin{
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+
+@keyframes to-right{
+    100%{
+        transform: translateX(800px);
+    }
+}
